@@ -1,0 +1,39 @@
+header{
+    height: 50px;
+    position: fixed;
+    color: rgb(255,229,229);
+    z-index: 1;
+    left: 25%;
+}
+
+nav{
+    text-align: center;
+    position: relative;
+}
+
+nav li{
+    display: inline-block;
+    margin: 16px 10px;
+}
+
+nav li:not(:last-child):after{
+    content: "•";
+    margin-left: 20px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: rgb(255,229,229);
+    transition: 0.4s color;
+}
+
+nav li a:hover{
+    color: rgba(255,229,229,0.5);
+}
+
+@media screen and (max-width:1040px){
+    header{
+        display: none;
+    }
+}
+
